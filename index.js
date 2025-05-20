@@ -48,10 +48,10 @@ app.post("/", (req, res) => {
   res.json({ result });
 });
 
-// Fallback route for SPA (serve index.html)
-app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "dist", "index.html"));
-  });
+// // Fallback route for SPA (serve index.html)
+// app.get("/*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "dist", "index.html"));
+//   });
   
 
 // Start server
